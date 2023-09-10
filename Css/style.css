@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+/**
+*
+* Testing
+*
+**/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  width: 10px;
+  background-color: #e5effa;
+  border-left: 0 solid #ffffff;
+  border-right: 0 solid #ffffff;
+  margin-block: 3px;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0a317b;
+  width: 15% !important;
+  height: 15% !important;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar:hover {
+  cursor: pointer;
+}
+
+::-moz-selection {
+  /* code for firefox */
+  color: #ffffff;
+  background-color: #0a317b;
+}
+
+::selection {
+  /* code for firefox */
+  color: #ffffff;
+  background-color: #0a317b;
+}
+
+/* end variables */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /*small*/
+  /* tablet */
+  /* Medium */
+  /* desktop  */
+}
+@media (min-width: 577px) {
+  .container {
+    width: 550px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*! start variables*/
+/*! end variables*/
+/*! start Global Rules*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #f9fafe;
+}
+
+.app .sevsnth_notification, .app .sixth_notification, .app .fifth_notification, .app .fourth_notification, .app .third_notification, .app .second_notification, .app .first_notification {
+  margin: 10px 0;
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 15px;
+}
+.app .sevsnth_notification img, .app .sixth_notification img, .app .fifth_notification img, .app .fourth_notification img, .app .third_notification img, .app .second_notification img, .app .first_notification img {
+  max-width: 40px;
+}
+.app .sevsnth_notification .here, .app .sixth_notification .here, .app .fifth_notification .here, .app .fourth_notification .here, .app .third_notification .here, .app .second_notification .here, .app .first_notification .here {
+  margin-left: 15px;
+  color: #787887;
+}
+.app .sevsnth_notification .here p:first-child, .app .sixth_notification .here p:first-child, .app .fifth_notification .here p:first-child, .app .fourth_notification .here p:first-child, .app .third_notification .here p:first-child, .app .second_notification .here p:first-child, .app .first_notification .here p:first-child {
+  font-size: 16px;
+  font-weight: 500;
+}
+.app .sevsnth_notification .here p:first-child .name, .app .sixth_notification .here p:first-child .name, .app .fifth_notification .here p:first-child .name, .app .fourth_notification .here p:first-child .name, .app .third_notification .here p:first-child .name, .app .second_notification .here p:first-child .name, .app .first_notification .here p:first-child .name {
+  font-weight: 800;
+  color: #1c202b;
+}
+.app .sevsnth_notification .here p:first-child .name:hover, .app .sixth_notification .here p:first-child .name:hover, .app .fifth_notification .here p:first-child .name:hover, .app .fourth_notification .here p:first-child .name:hover, .app .third_notification .here p:first-child .name:hover, .app .second_notification .here p:first-child .name:hover, .app .first_notification .here p:first-child .name:hover {
+  cursor: pointer;
+  color: #0a317b;
+}
+.app .sevsnth_notification .here p:first-child .group, .app .sixth_notification .here p:first-child .group, .app .fifth_notification .here p:first-child .group, .app .fourth_notification .here p:first-child .group, .app .third_notification .here p:first-child .group, .app .second_notification .here p:first-child .group, .app .first_notification .here p:first-child .group {
+  font-weight: 800;
+}
+.app .sevsnth_notification .here p:first-child .group:hover, .app .sixth_notification .here p:first-child .group:hover, .app .fifth_notification .here p:first-child .group:hover, .app .fourth_notification .here p:first-child .group:hover, .app .third_notification .here p:first-child .group:hover, .app .second_notification .here p:first-child .group:hover, .app .first_notification .here p:first-child .group:hover {
+  cursor: pointer;
+  color: #0a317b;
+}
+.app .sevsnth_notification .here p:first-child .image img, .app .sixth_notification .here p:first-child .image img, .app .fifth_notification .here p:first-child .image img, .app .fourth_notification .here p:first-child .image img, .app .third_notification .here p:first-child .image img, .app .second_notification .here p:first-child .image img, .app .first_notification .here p:first-child .image img {
+  position: absolute;
+  transform: translate(450%, 0%);
+}
+@media (max-width: 768px) {
+  .app .sevsnth_notification .here p:first-child .image img, .app .sixth_notification .here p:first-child .image img, .app .fifth_notification .here p:first-child .image img, .app .fourth_notification .here p:first-child .image img, .app .third_notification .here p:first-child .image img, .app .second_notification .here p:first-child .image img, .app .first_notification .here p:first-child .image img {
+    transform: translate(10%, 10%);
+  }
+}
+@media (max-width: 510px) {
+  .app .sevsnth_notification .here p:first-child .image img, .app .sixth_notification .here p:first-child .image img, .app .fifth_notification .here p:first-child .image img, .app .fourth_notification .here p:first-child .image img, .app .third_notification .here p:first-child .image img, .app .second_notification .here p:first-child .image img, .app .first_notification .here p:first-child .image img {
+    transform: translate(200%, 10%);
+  }
+}
+@media (max-width: 360px) {
+  .app .sevsnth_notification .here p:first-child .image img, .app .sixth_notification .here p:first-child .image img, .app .fifth_notification .here p:first-child .image img, .app .fourth_notification .here p:first-child .image img, .app .third_notification .here p:first-child .image img, .app .second_notification .here p:first-child .image img, .app .first_notification .here p:first-child .image img {
+    transform: translate(100%, 10%);
+  }
+}
+.app .sevsnth_notification .here p:first-child .image:hover, .app .sixth_notification .here p:first-child .image:hover, .app .fifth_notification .here p:first-child .image:hover, .app .fourth_notification .here p:first-child .image:hover, .app .third_notification .here p:first-child .image:hover, .app .second_notification .here p:first-child .image:hover, .app .first_notification .here p:first-child .image:hover {
+  cursor: pointer;
+}
+.app .sevsnth_notification .here .message, .app .sixth_notification .here .message, .app .fifth_notification .here .message, .app .fourth_notification .here .message, .app .third_notification .here .message, .app .second_notification .here .message, .app .first_notification .here .message {
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 1px solid #e5effa;
+}
+.app .sevsnth_notification .here .message:hover, .app .sixth_notification .here .message:hover, .app .fifth_notification .here .message:hover, .app .fourth_notification .here .message:hover, .app .third_notification .here .message:hover, .app .second_notification .here .message:hover, .app .first_notification .here .message:hover {
+  cursor: pointer;
+  background-color: #e5effa;
+  border: none;
+}
+
+.new {
+  background-color: #f7fafd;
+}
+.new .here p:first-child::after {
+  content: " ";
+  padding: 0px 3px;
+  margin: 10px;
+  font-size: 5px;
+  border-radius: 40px;
+  background-color: #f65351;
+}
+
+/*! end Global Rules*/
+/*! start code */
+.app {
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 700px;
+}
+.app .Counter_notifications {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.app .Counter_notifications #notifications {
+  font-size: 20px;
+  font-weight: 800;
+}
+.app .Counter_notifications #notifications #notificationsNumber {
+  margin-left: 5px;
+  padding: 5px 10px;
+  background-color: #0a317b;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.app .Counter_notifications #mark {
+  color: #787887;
+}
+.app .Counter_notifications #mark:hover {
+  cursor: pointer;
+  color: #0a317b;
+}
+@media (max-width: 360px) {
+  .app .Counter_notifications {
+    flex-direction: column;
+  }
+  .app .Counter_notifications #notifications {
+    margin-bottom: 10px;
+  }
+}
+/*! start Attribution */
+.attribution {
+  color: #1c202b;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 0;
+  text-align: center;
+  width: -webkit-fill-available;
+}
+.attribution a {
+  font-size: smaller;
+  text-decoration: none;
+  color: #0a317b;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.attribution a:hover::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  content: "\f0a9";
+  font-size: 14px;
+  padding: 0 8px;
+}
+
+/*! end Attribution */
+/*! end code *//*# sourceMappingURL=style.css.map */

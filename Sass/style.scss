@@ -1,0 +1,210 @@
+// import file to font app
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+// import file to media cwery
+@import "_breakpoints.scss";
+
+// import create Custom-Scrollbars-&-Selection-color
+@import "_Custom-Scrollbars-&-Selection-color.scss";
+
+// import containerScreen
+@import "_containerScreen.scss";
+
+/*! start variables*/
+$colorNormal: #ffffff;
+$colorHeading: #1c202b;
+$colorSubheading: #787887;
+$colorHover: #0a317b;
+$bg-color: #f7fafd;
+$bg-message: #e5effa;
+$colorCircle: #f65351;
+
+/*! end variables*/
+/*! start Global Rules*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #f9fafe;
+}
+
+%notification {
+  margin: 10px 0;
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 15px;
+  img {
+    max-width: 40px;
+  }
+  .here {
+    margin-left: 15px;
+    color: $colorSubheading;
+    p:first-child {
+      font: {
+        size: 16px;
+        weight: 500;
+      }
+      .name {
+        font-weight: 800;
+        color: $colorHeading;
+        &:hover {
+          cursor: pointer;
+          color: $colorHover;
+        }
+      }
+      .group {
+        font-weight: 800;
+        &:hover {
+          cursor: pointer;
+          color: $colorHover;
+        }
+      }
+      .image {
+        img {
+          position: absolute;
+          // right: 330px;
+          transform: translate(450%, 0%);
+          @include media("<=tablet") {
+            transform: translate(10%, 10%);
+          }
+          @include media("<=510px") {
+            transform: translate(200%, 10%);
+          }
+          @include media("<=phone") {
+            transform: translate(100%, 10%);
+          }
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .message {
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 10px;
+      border: 1px solid $bg-message;
+      &:hover {
+        cursor: pointer;
+        background-color: $bg-message;
+        border: none;
+      }
+    }
+  }
+}
+
+.new {
+  background-color: $bg-color;
+  .here {
+    p:first-child {
+      &::after {
+        content: " ";
+        padding: 0px 3px;
+        margin: 10px;
+        font-size: 5px;
+        border-radius: 40px;
+        background-color: #f65351;
+      }
+    }
+  }
+}
+/*! end Global Rules*/
+/*! start code */
+.app {
+  padding: 20px;
+  margin: 20px auto;
+  background-color: $colorNormal;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 700px;
+  .Counter_notifications {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    #notifications {
+      font: {
+        size: 20px;
+        weight: 800;
+      }
+      #notificationsNumber {
+        margin-left: 5px;
+        padding: 5px 10px;
+        background-color: $colorHover;
+        color: $colorNormal;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+    }
+    #mark {
+      color: $colorSubheading;
+      &:hover {
+        cursor: pointer;
+        color: $colorHover;
+      }
+    }
+    @include media("<=phone") {
+      flex-direction: column;
+      #notifications {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .first_notification {
+    @extend %notification;
+  }
+  .second_notification {
+    @extend %notification;
+  }
+  .third_notification {
+    @extend %notification;
+  }
+  .fourth_notification {
+    @extend %notification;
+  }
+  .fifth_notification {
+    @extend %notification;
+  }
+  .sixth_notification {
+    @extend %notification;
+  }
+  .sevsnth_notification {
+    @extend %notification;
+  }
+}
+/*! start Attribution */
+.attribution {
+  color: $colorHeading;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 0;
+  text-align: center;
+  width: -webkit-fill-available;
+  a {
+    font-size: smaller;
+    text-decoration: none;
+    color: $colorHover;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
+    &:hover::after {
+      font-family: "Font Awesome 6 Free";
+      font-weight: 600;
+      content: "\f0a9";
+      font-size: 14px;
+      padding: 0 8px;
+    }
+  }
+}
+/*! end Attribution */
+/*! end code */
